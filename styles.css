@@ -7,7 +7,6 @@
 
 body  {
   font-family: 'Merriweather', serif;
-  overflow:hidden;
 }
 
 
@@ -78,8 +77,8 @@ h1  {
 .ojo-picture, .olunlade-picture  {
   width: 150px;
   height: 150px;
-  float: left;
   margin-right: 15px;
+  transition: .8s;
 }
 
 .sub-section  {
@@ -89,9 +88,7 @@ h1  {
 .dummy  {
   width: 0;
 }
-.ojo-bio, .olunlade-bio  {
-  width: 400x;
-}
+
 .bio-carrier  {
   padding: 30px 200px;
 }
@@ -119,4 +116,13 @@ h3 ,h4  {
   height: 160px;
   width: 160px;
   transition: .8s;
+}
+
+@media (max-width:1028px) {
+  .ojo-bio, .olunlade-bio  {
+    clear: right;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px auto;
+  }
 }
